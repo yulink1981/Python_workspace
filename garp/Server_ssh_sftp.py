@@ -13,7 +13,7 @@ class Myssh():
         s.load_system_host_keys()
         s.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         s.connect(hostname = host,port=int(port),username=username, password=password)
-        print(cmd)
+        #print(cmd)
         stdin, stdout, stderr = s.exec_command(cmd)
         result = stdout.read()
         status = stderr.read()
