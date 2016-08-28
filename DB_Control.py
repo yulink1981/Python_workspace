@@ -12,7 +12,6 @@ import pymssql
 
 class MSSQL:
 
-
     def __init__(self,host,user,pwd,db):
         self.host = host
         self.user = user
